@@ -1,24 +1,23 @@
 products = dict()
 
 K = input("type K: ")
-try: 
+try:
     K = int(K)
-except: 
+except ValueError:
     K = 0
 
 for i in range(K):
-    data = input("type data in (name, count): ") 
+    data = input("type data in (name, count): ")
     data = data.split(',')
     try:
         value = int(data[1])
     except:
         value = None
-    
+
     products.setdefault(data[0], value)
 
 print(products)
 
-    
 
 # friends = [
 #     dict(name="Ivan", age=18),
@@ -33,7 +32,7 @@ print(products)
 
 # min_age = [1000, '']
 # max_length = ''
-# for friend in friends: 
+# for friend in friends:
 #     if friend.get('age') < min_age[0]:
 #         min_age[0], min_age[1] = friend.get('age'), friend.get('name')
 #     if len(friend.get('name')) > len(max_length):

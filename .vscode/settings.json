@@ -18,5 +18,32 @@
         "titleBar.inactiveBackground": "#ff3d0099",
         "titleBar.inactiveForeground": "#e7e7e799"
     },
-    "peacock.color": "#ff3d00"
+    "peacock.color": "#ff3d00",
+    "python.autoComplete.extraPaths": [
+
+    ],
+    "python.linting.pep8Enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.flake8Enabled": false,
+    "python.linting.enabled": true,
+    "python.formatting.provider": "none",
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "120"
+    ],    
+    "python.linting.flake8Args": [
+        "--max-line-length=120",
+        "--ignore=E402",
+    ],
+    "python.linting.pylintArgs": [
+        "--max-line-length=180"
+    ],
+    "python.formatting.autopep8Args": [
+        "--max-line-length=180"
+    ], 
+    "python.pythonPath": "venv/bin/python",
+    "python.analysis.extraPaths": [],
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8"
+    }
 }
